@@ -1,0 +1,17 @@
+# Ignorera alla .log-filer
+*.log
+
+# Ignorera en specifik mapp
+bin/
+
+# Ignorera en specifile 
+
+# Ignorera alla .log-filer
+*.log
+
+# Ignorera en specifik mapp
+bin/
+
+# Ignorera en specifik fil
+config.json
+¨¨
