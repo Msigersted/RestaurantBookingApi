@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DI8ibB8VojwqN1DqZ3xz9KLQZgWbgq8EqOVwrpbYN9T2h7Md6yXqnibDvbTjgi6thEvygMfqdbuUxNhRZhoIOg==",
+  "dgSpecHash": "z3Fp4wQ8U4rHqY0uYi+bJSfCbqlvI5oOmm4AO2wf9lYcHqA3OweDbmZtuZuRNXypAoLAC3MGBb9YtYkt8Rnbgw==",
   "success": false,
   "projectFilePath": "C:\\Users\\madel\\Desktop\\Booking\\RestaurantBookingApi\\RestaurantBookingApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\madel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.1\\microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
+    "C:\\Users\\madel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
@@ -28,9 +28,19 @@
   ],
   "logs": [
     {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "RestaurantBookingApi depends on Microsoft.AspNetCore.OpenApi (>= 6.0.0) but Microsoft.AspNetCore.OpenApi 6.0.0 was not found. An approximate best match of Microsoft.AspNetCore.OpenApi 7.0.0 was resolved.",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
       "code": "NU1202",
       "level": "Error",
-      "message": "Package Microsoft.AspNetCore.OpenApi 8.0.1 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Microsoft.AspNetCore.OpenApi 8.0.1 supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "message": "Package Microsoft.AspNetCore.OpenApi 7.0.0 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Microsoft.AspNetCore.OpenApi 7.0.0 supports: net7.0 (.NETCoreApp,Version=v7.0)",
       "libraryId": "Microsoft.AspNetCore.OpenApi",
       "targetGraphs": [
         "net6.0"
