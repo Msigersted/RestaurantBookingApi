@@ -33,5 +33,5 @@ jobs:
           application_name: Minapi
           environment_name: Minapi-env
           version_label: ${{ github.run_id }}
-          region: eu-north-1
+          region: us-east-1
           deployment_package: site.zip
