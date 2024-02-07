@@ -9,7 +9,7 @@ namespace RestaurantBookingApi.Tests
         {
             // Arrange
             var service = new CryptographyService();
-            var originalString = "TestString";
+            var originalString = "teststring";
 
             // Act
             var encrypted = service.Encrypt(originalString);
