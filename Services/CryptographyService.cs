@@ -22,8 +22,19 @@ namespace RestaurantBookingApi.Services
         }
 
         public static string Decrypt(string input)
+
         {
-            return Encrypt(input, 26 - key);
+            char[] result = input.ToCharArray();
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (char.IsLetter(result[i]))
+                {
+                    char offset = char.IsUpper(result[i]) ? 'A' : 'a';
+                    result[i] = (char)(((result[i] +(26 - key) - offset) % 26) + offset);
+                }
+            }
+            return new string(result);
         }
 
     }
