@@ -6,7 +6,7 @@ namespace RestaurantBookingApi.Services
     public class CryptographyService
     {
         int key = 5;
-        static string Encrypt(string input)
+        public static string Encrypt(string input)
         {
             char[] result = input.ToCharArray();
 
@@ -21,9 +21,20 @@ namespace RestaurantBookingApi.Services
             return new string(result);
         }
 
-        static string Decrypt(string input)
+        public static string Decrypt(string input)
+
         {
-            return Encrypt(input, 26 - key);
+            char[] result = input.ToCharArray();
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (char.IsLetter(result[i]))
+                {
+                    char offset = char.IsUpper(result[i]) ? 'A' : 'a';
+                    result[i] = (char)(((result[i] +(26 - key) - offset) % 26) + offset);
+                }
+            }
+            return new string(result);
         }
 
     }
