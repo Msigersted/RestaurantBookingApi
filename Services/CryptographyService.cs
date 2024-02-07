@@ -5,37 +5,18 @@ namespace RestaurantBookingApi.Services
 {
     public class CryptographyService
     {
-        int key = 5;
-        public static string Encrypt(string input)
-        {
-            char[] result = input.ToCharArray();
+        private const int Shift = 4; 
 
-            for (int i = 0; i < result.Length; i++)
-            {
-                if (char.IsLetter(result[i]))
-                {
-                    char offset = char.IsUpper(result[i]) ? 'A' : 'a';
-                    result[i] = (char)(((result[i] + key - offset) % 26) + offset);
-                }
-            }
-            return new string(result);
+        public string Encrypt(string input)
+        {
+            
+            return string.IsNullOrEmpty(input) ? input : new string(input.Select(c => (char)(((c + Shift - 'a') % 26) + 'a')).ToArray());
         }
 
-        public static string Decrypt(string input)
-
+        public string Decrypt(string input)
         {
-            char[] result = input.ToCharArray();
-
-            for (int i = 0; i < result.Length; i++)
-            {
-                if (char.IsLetter(result[i]))
-                {
-                    char offset = char.IsUpper(result[i]) ? 'A' : 'a';
-                    result[i] = (char)(((result[i] +(26 - key) - offset) % 26) + offset);
-                }
-            }
-            return new string(result);
+           
+            return string.IsNullOrEmpty(input) ? input : new string(input.Select(c => (char)(((c - Shift - 'a' + 26) % 26) + 'a')).ToArray());
         }
-
     }
 }
