@@ -1,20 +1,13 @@
+using System;
+using System.IO;
+using RestaurantBookingApi;
 
+    
     var builder = WebApplication.CreateBuilder(args);
-    builder.Services.AddControllers();
-    builder.Services.AddSwaggerGen();
-
     var app = builder.Build();
-
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-        app.UseSwagger();
-        app.UseSwaggerUI();
-    }
-
-    app.UseHttpsRedirection();
-    app.UseAuthorization();
-    app.MapControllers();
-
+    CryptographyService _cryptoService = new CryptographyService();
+    app.MapGet("/", () => "/encrypt for encryption and /decrypt for decrypt\nSyntax: /[endpoint]?input='[string]'\n[IMPORTANT]--> Key must be larger than 0 and smaller than 27");
+    app.MapGet("/encrypt", (string input) => _cryptoService.Encrypt(input));
+    app.MapGet("/decrypt", (string input) => _cryptoService.Decrypt(input));         
     app.Run();
 

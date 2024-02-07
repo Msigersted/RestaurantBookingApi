@@ -1,7 +1,7 @@
 using System.Linq;
-using RestaurantBookingApi.Services;
+using RestaurantBookingApi;
 
-namespace RestaurantBookingApi.Services
+namespace RestaurantBookingApi
 {
     public class CryptographyService
     {
