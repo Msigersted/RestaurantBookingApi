@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "145x0ESruMfCGzAW91bzr0QW1ITV4Ve2e+Im3ig2QT/uLqKg9FZchq5QdV9b5YJI/2JhNRWprVpP5c+2nqH/zQ==",
+  "dgSpecHash": "WwMCFUvM7XFsJQInc6erNso23bjmViij9uTBAhIrwZsZ5/+YiB41k5GTyeYAFlEuZ5NAb/35iJB5GJq6njjH7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\madel\\Desktop\\Booking\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
   "expectedPackageFiles": [
@@ -92,7 +92,10 @@
     "C:\\Users\\madel\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\madel\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\madel\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\madel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\madel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\madel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
