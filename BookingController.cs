@@ -28,7 +28,7 @@ namespace RestaurantBookingApi{
                 var parts = b.Split(':');
                 var decryptedName = _cryptoService.Decrypt(parts[0]);
                 return $"{decryptedName}:{parts[1]}";
-            }).ToList(); // Omvandla till List för att undvika eventuella upprepade enumerationer
+            }).ToList(); 
             return Ok(decryptedBookings);
     }
 }
