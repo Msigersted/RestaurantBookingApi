@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using RestaurantBookingApi.Services;
+using RestaurantBookingApi;
 
-namespace RestaurantBookingApi{
+namespace RestaurantBookingApi
+{
     [ApiController]
     [Route("api/[controller]")]
     public class BookingController : ControllerBase

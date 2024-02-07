@@ -1,5 +1,5 @@
 using Xunit;
-using RestaurantBookingApi.Services; 
+using RestaurantBookingApi; 
 namespace RestaurantBookingApi.Tests
 {
     public class CryptographyServiceTests  
