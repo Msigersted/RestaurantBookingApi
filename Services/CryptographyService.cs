@@ -5,18 +5,25 @@ namespace RestaurantBookingApi.Services
 {
     public class CryptographyService
     {
-        private const int Shift = 4; // Enkel skift för Caesar-chiffer
-
-        public string Encrypt(string input)
+        static string Encrypt(string input, int key)
         {
-            // Caesar-chiffer logik för kryptering
-            return string.IsNullOrEmpty(input) ? input : new string(input.Select(c => (char)(((c + Shift - 'a') % 26) + 'a')).ToArray());
+            char[] result = input.ToCharArray();
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (char.IsLetter(result[i]))
+                {
+                    char offset = char.IsUpper(result[i]) ? 'A' : 'a';
+                    result[i] = (char)(((result[i] + key - offset) % 26) + offset);
+                }
+            }
+            return new string(result);
         }
 
-        public string Decrypt(string input)
+        static string Decrypt(string input, int key)
         {
-            // Caesar-chiffer logik för avkryptering
-            return string.IsNullOrEmpty(input) ? input : new string(input.Select(c => (char)(((c - Shift - 'a' + 26) % 26) + 'a')).ToArray());
+            return Encrypt(input, 26 - key);
         }
+
     }
 }
