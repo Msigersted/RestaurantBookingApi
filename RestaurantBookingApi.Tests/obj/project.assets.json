@@ -5524,11 +5524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\madel\\Desktop\\api\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\madel\\Desktop\\Booking\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
       "projectName": "RestaurantBookingApi.Tests",
-      "projectPath": "C:\\Users\\madel\\Desktop\\api\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
+      "projectPath": "C:\\Users\\madel\\Desktop\\Booking\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
       "packagesPath": "C:\\Users\\madel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madel\\Desktop\\api\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\obj\\",
+      "outputPath": "C:\\Users\\madel\\Desktop\\Booking\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

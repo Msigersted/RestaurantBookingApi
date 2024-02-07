@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LwYba8p08LWYXZOFzRg5F2KkOQpzNkKfTdKsZSP/tzWdF0nOg4jPGxC6x/mk455S9BiBBQsutTl1+Pl7O1tlKw==",
+  "dgSpecHash": "145x0ESruMfCGzAW91bzr0QW1ITV4Ve2e+Im3ig2QT/uLqKg9FZchq5QdV9b5YJI/2JhNRWprVpP5c+2nqH/zQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\madel\\Desktop\\api\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
+  "projectFilePath": "C:\\Users\\madel\\Desktop\\Booking\\RestaurantBookingApi\\RestaurantBookingApi.Tests\\RestaurantBookingApi.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\madel\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
