@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq; 
+using System.Linq;
 using RestaurantBookingApi.Services;
 
 namespace RestaurantBookingApi{
@@ -14,10 +14,24 @@ namespace RestaurantBookingApi{
         [HttpPost]
         public ActionResult AddBooking(string customerName, string bookingDate)
         {
-            // Antag att customerName och bookingDate är giltiga och icke-nulla
             var encryptedName = _cryptoService.Encrypt(customerName);
             bookings.Add($"{encryptedName}:{bookingDate}");
             return Ok("Booking added successfully.");
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult UpdateBooking(int id, string customerName, string bookingDate)
+        {
+            if (id >= 0 && id < bookings.Count)
+            {
+                var encryptedName = _cryptoService.Encrypt(customerName);
+                bookings[id] = $"{encryptedName}:{bookingDate}";
+                return Ok("Booking updated successfully.");
+            }
+            else
+            {
+                return NotFound($"Booking with ID {id} not found.");
+            }
         }
 
         [HttpGet]
@@ -30,6 +44,6 @@ namespace RestaurantBookingApi{
                 return $"{decryptedName}:{parts[1]}";
             }).ToList(); 
             return Ok(decryptedBookings);
+        }
     }
-}
 }
